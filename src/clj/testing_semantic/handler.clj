@@ -19,8 +19,8 @@
            :content "width=device-width, initial-scale=1"}]
    (include-css (if (env :dev) "/css/site.css" "/css/site.min.css")
                 "/css/semantic.min.css")
-   (include-js "https://code.jquery.com/jquery-3.1.1.min.js"
-               "/js/semantic.min.js")])
+   (include-js "/js/semantic.min.js"
+               "https://code.jquery.com/jquery-3.1.1.min.js")])
 
 (defn loading-page []
   (html5
